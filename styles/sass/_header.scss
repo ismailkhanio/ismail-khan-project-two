@@ -1,0 +1,89 @@
+header {
+  height: 75vh;
+  padding: 10px 0;
+  background-image: url(../beach-final-images/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  font-family: $playfair-font;
+  font-size: 34.6px;
+  color: $greenish-cyan;
+}
+
+menu {
+  width: 100%;
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  
+  ul {
+    width: 50%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  a {
+    color: $ice-blue;
+    font-family: $lato-font;
+    font-weight: 700;
+    font-size: 20px;
+
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      color: $greenish-cyan;
+    }
+  }
+}
+
+.header-text-container {
+  width: 50%;
+  height: 75%;
+  margin-left: 340px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  
+  h1 {
+  font-family: $playfair-font;
+  font-size: 112.2px;
+  color: $twilight-blue;
+  }
+
+  h2 {
+    font-family: $lato-font;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 58px;
+    letter-spacing: 6.7px;
+    color: $spruce;
+  }
+}
+
+header .img-container {
+  width: 42.5%;
+  
+  position: absolute;
+  top: 30%;
+  left: 0;
+  
+  img {
+    width: 90%;
+  }
+}
+

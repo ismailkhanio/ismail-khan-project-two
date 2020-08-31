@@ -1,0 +1,268 @@
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'menu';
+@import 'header';
+
+
+// CONTACT HEADER
+.contact-header {
+	background-image: url(/beach-final-images/contact-image-1.jpg);
+
+	h1 {
+		height: 320px;
+	}
+}
+
+// CONTACT MAIN
+.contact {
+	height: 100%;
+	background-color: $ice-blue;
+}
+
+.display-fix {
+	position: relative;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.form-container {
+	display: flex;
+	width: 70%;
+	position: relative;
+
+	form {
+		height: 750px;
+		background-color: $ice-blue;
+		position: absolute;
+		margin-left: 50px;
+		top: -150px;
+		left: -100px;
+		width: 100%;
+		padding-top: 50px;
+		padding-left: 50px;
+		box-shadow: 25px 25px 0px 0px #50E3C2;
+
+		input,
+		textarea {
+			padding: 20px 0;
+			padding-left: 20px;
+
+			@include body-form-text(300);
+		}
+
+		.name-email-container {
+			display: flex;
+			justify-content: space-between;
+
+			input {
+				width: 49%;
+
+				border-style: none;
+				border-bottom: 3px solid $greenish-cyan;
+			}
+
+			.hide-label {
+				position: absolute !important;
+				height: 1px;
+				width: 1px;
+				overflow: hidden;
+				clip: rect(1px 1px 1px 1px);
+				clip: rect(1px, 1px, 1px, 1px);
+				white-space: nowrap;
+			}
+		}
+
+		.name-email-container,
+		textarea,
+		button {
+			width: 94%;
+		}
+
+		textarea {
+			margin-top: 50px;
+			border: 3px solid $greenish-cyan;
+		}
+
+		button {
+			margin: 50px 0;
+			border-style: none;
+		}
+	}
+}
+
+.contact aside {
+	width: 30%;
+	height: 900px;
+	padding: 150px 0;
+	padding-left: 75px;
+
+	.social-link-container {
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+		
+		a {
+			color: $black;
+		}
+
+		i {
+			font-size: 22px;
+		}
+	}
+
+	.social-link-container, 
+	.address-text {
+		padding: 20px 0;
+	}
+
+	.contact-text {
+		font-family: $lato-font;
+		font-size: 20px;
+		color: $black;
+		letter-spacing: 1.7px;
+
+		a {
+			// text-decoration: none;
+			font-weight: 700;
+			font-size: 22px;
+			color: inherit;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+	}
+}
+
+// MEDIA QUERIES
+@media (max-width: 940px) {
+	.contact-header {
+		h1 {
+			align-items: center;
+			justify-content: center;
+		}
+
+		menu {
+			margin-bottom: 100px;
+		}
+	}
+
+	.flex-container {
+		flex-direction: column;
+	}
+	// form
+	.form-container {
+		width: 90%;
+		
+		form {
+			position: static;
+		}
+	}
+	.contact aside {
+		width: 100%;
+		height: 100%;
+		padding: 100px 0;
+		padding-left: 75px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-header h1 {
+		height: 450px;
+	}
+
+	.form-container form {
+		margin-left: 20px;
+	}
+
+	.form-container form .name-email-container input {
+		width: 100%;
+	}
+
+	.form-container form .name-email-container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-header {
+		height: 75vh;
+
+		h1 {
+			font-size: 75px;
+			height: 290px;
+		}
+	}
+
+	.form-container {
+		width: 100%;
+
+		form {
+			box-shadow: none;
+			padding-left: 0;
+			height: 700px;
+		}
+
+		form input,
+		form textarea {
+			letter-spacing: 1px;
+			font-size: 16px;
+		}
+	}
+
+	.contact aside {
+		padding: 50px 0;
+		padding-left: 25px;
+	}
+}
+
+@media (max-width: 420px) {
+	.contact-header h1 {
+		font-size: 4.2rem;
+		width: 100%;
+	}
+}
+
+@media (max-width: 380px) {
+	 .contact-header h1 {
+	 	font-size: 3.7rem;
+	 }
+}
+
+@media (max-width: 360px) {
+	.contact-header h1 {
+		font-size: 3.4rem;
+	}
+}
+@media (max-width: 330px) {
+	.contact-header h1 {
+		font-size: 3.1rem;
+	}
+
+	.nav-menu a {
+		font-size: 16px;
+	}
+
+	.nav-menu ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-header h1 {
+		font-size: 3.2rem;
+	}
+
+}
+
+
+
+
+
+
+
+

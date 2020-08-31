@@ -1,0 +1,634 @@
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'menu';
+
+// HOME HEADER
+.header-home {
+	height: 75vh;
+	padding: 10px 0;
+	background-image: url(/beach-final-images/home-image-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-text-container {
+	// max-width: 600px;
+	// width: 50%;
+	// height: 75%;
+	height: 53vh;
+	margin-left: 365px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+
+	position: absolute;
+	z-index: 2;
+
+	h1 {
+		font-family: $playfair-font;
+		font-size: 112.2px;
+		color: $twilight-blue;
+	}
+
+	h2 {
+		font-family: $lato-font;
+		font-weight: 700;
+		font-size: 62px;
+		line-height: 58px;
+		letter-spacing: 6.7px;
+		color: $spruce;
+	}
+}
+
+header .img-container {
+	width: 42.5%;
+
+	position: absolute;
+	top: 30%;
+	left: 0;
+	z-index: 1;
+
+	img {
+		width: 90%;
+	}
+}
+
+// HOME MAIN
+// Visit Us
+.visit-us {
+	max-height: 85vh;
+	height: 100%;
+	padding: 200px 0;
+	background-color: $ice-blue;
+
+	h3 {
+		@include font-heading-color($spruce);
+	}
+
+	p {
+		@include body-form-text(400);
+	}
+
+	.flex-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 50px;
+		
+		.text-container {
+			width: 65%;
+		}
+
+		.img-container {
+			width: 25%;
+			margin-left: 50px;
+		}
+
+		img {
+			box-shadow: -25px 25px 0px 0px $greenish-cyan;
+		}
+	}
+}
+
+.read-more-btn {
+	font-family: $playfair-font;
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;
+	line-height: 32px;
+	letter-spacing: 1px;
+
+	color: $ice-blue;
+	background-color: $twilight-blue;
+	padding: 10px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// Gallery 
+.gallery {
+	height: 100%;
+	padding: 100px 0;
+	background-color: $light-light-blue;
+}
+
+.gallery-img-container {
+	width: 100%;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		max-height: 400px;
+		max-width: 400px;
+		height: calc(80vw / 3);
+		width: calc(90vw / 3);
+	}
+}
+
+// Info-block 
+.info-block {
+	height: 100%;
+	padding: 100px 0;
+	background-color: $ice-blue;
+
+	// Reference to create a perfect circle background: https://markheath.net/post/font-awesome-circle-background
+	i {
+		color: $ice-blue;
+		background-color: $greenish-cyan;
+		height: 45px;
+		width: 45px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 50px;
+	}
+
+	.info-heading {
+		font-family: $lato-font;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 58px;
+		letter-spacing: 3.2px;
+	}
+
+	p {
+		@include body-form-text(400);
+	}
+}
+
+.block-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.info-container {
+	width: 50%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+
+	.icon-container {
+		display: flex;
+		align-items: center;
+
+		h3 {
+			padding-left: 25px;
+			@include font-heading-color($spruce);
+		}
+	}
+
+	p {
+		padding-left: 71px;
+	}
+
+}
+
+// location
+.location {
+	height: 100%;
+	padding-bottom:100px 0;
+	background-color: $light-light-blue;
+
+	position: relative;
+
+	.text-container {
+		width: 40%;
+
+		h3 {
+			@include font-heading-color($twilight-blue);
+		}
+
+		p {
+			@include body-form-text(400);
+			margin: 0;
+			padding: 10px 0 25px 0;
+		}
+	}
+
+	.img-container {
+		width: 41%;
+		position: absolute;
+		height: 420px;
+	}
+
+}
+
+.top-location-container,
+.bot-location-container {
+	display: flex;
+	width: 100%;
+
+	.text-container {
+		padding: 65px 0;
+	}
+}
+
+.top-location-container {
+	justify-content: right;
+
+	.img-container {
+		top: -50px;
+		left: 0;
+		img {
+			box-shadow: 25px 25px 0px 0px $greenish-cyan;
+		}
+	}
+
+}
+
+.bot-location-container {
+	justify-content: left;
+	.img-container {
+		bottom: -50px;
+		right: 0;
+		img {
+			box-shadow: -25px 25px 0px 0px $greenish-cyan;
+		}
+	}
+	.text-container {
+		text-align: right;
+		padding-bottom: 100px;
+	}
+}
+
+// free trip
+.free-trip {
+	height: 100%;
+	background-color: $ice-blue;
+
+	.text-container {
+		padding-bottom: 15px;
+		margin: 100px auto;
+		text-align: center;
+		width: 83%;
+
+		h3 {
+			@include font-heading-color($spruce);
+		}
+
+		p {
+			@include body-form-text(400);
+			padding-bottom: 10px;
+		}
+	}
+}
+
+// MEDIA QUERIES
+/* portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.header-home {
+		height: 95vh;
+
+		.img-container {
+			display: none;
+		}
+
+		.header-text-container {
+			position: static;
+			justify-content: center;
+			align-items: center;
+			margin-left: 0;
+			height: 58vh;
+		}
+	}
+
+	// MAIN 
+	.home {
+		p {
+			padding-left: 0;
+			font-size: 1.3rem;
+			line-height: 1.8rem;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		.read-more-btn {
+			margin: 0 auto;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.visit-us {
+		padding: 0;
+		margin-bottom: 150px;
+		max-height: 120vh;
+		height: 100%;
+
+		.flex-container {
+			flex-direction: column-reverse;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			padding-top: 0;
+
+			.img-container {
+				width: 45%;
+			}
+
+			.text-container {
+				padding: 75px 0;
+				h3,
+				a {
+					text-align: center;
+				}
+				p {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+
+	.gallery {
+		.gallery-img-container {
+			flex-direction: column;
+			// margin: 20px 0;
+		}
+
+		img {
+			max-height: 450px;
+			max-width: 500px;
+			width: 100%;
+			height: 50%;
+			margin: 20px 0;
+		}
+	}
+	
+	.block-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.info-container {
+			width: 65%;
+			height: 250px;
+
+			.icon-container {
+				justify-content: center;
+			}
+		}
+	}
+
+	.location {
+		padding: 100px 0;
+	}
+	
+	.top-location-container,
+	.bot-location-container {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		// width: 100%;
+	}
+
+	.location .img-container {
+		position: static;
+		width: 70%;
+		height: 100%;
+	}
+
+	.top-location-container {
+		.img-container {
+			margin-bottom: 70px;
+		}
+	}
+	
+	.location .text-container {
+		width: 65%;
+		text-align: center;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 75px;
+
+		.location-text {
+			padding: 0;
+			padding: 15px 0 30px 0;
+		}
+	}
+
+	.free-trip {
+		display: flex;
+		flex-direction: column;
+		img {
+			height: 420px;
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.header-text-container {
+		h1 {
+			font-size: 92px;
+		}
+
+		h2 {
+			font-size: 56px;
+		}
+	}
+
+	.visit-us .flex-container .text-container {
+		width: 80%;
+	}
+
+	.block-container .info-container {
+		width: 70%;
+	}
+
+	.location .text-container {
+		width: 70%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.header-home menu .nav-menu ul {
+		width: 100%;
+		padding-left: 0;
+		flex-wrap: wrap;
+	}
+
+	.header-text-container {
+		h1 {
+			font-size: 3.6rem;
+		}
+
+		h2 {
+			font-size: 2.8rem;
+		}
+	}
+
+	.visit-us {
+		margin-bottom: 250px;
+		height: 130vh;
+		.flex-container .text-container,
+		.flex-container .img-container {
+			width: 100%;
+		}
+
+		.text-container {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.read-more-btn {
+		width: 60%;
+
+		p {
+			font-size: 1.2rem;
+			line-height: 30px;
+		}
+	}
+
+	.block-container .info-container {
+		width: 100%;
+	}
+
+	.location {
+		.img-container, 
+		.text-container {
+			width: 100%;
+		}
+	}
+
+	.free-trip {
+		img {
+		height: 330px;
+		}
+
+		.text-container {
+			width: 100%;
+		}
+	}
+
+	footer {
+		p {
+			font-size: 16px;
+			line-height: 25px;
+		}
+		
+		p:nth-of-type(2) {
+			font-size: 12px;
+		}
+	}
+	
+}
+
+@media (max-width: 420px) {
+
+	.home p {
+		font-size: 1.2rem;
+	}
+	.visit-us .flex-container .text-container p {
+	}
+
+	.home .read-more-btn {
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.block-container .info-container {
+		height: 280px;
+	}
+
+	.location .img-container,
+	.location .text-container {
+		width: 90%;
+	}
+
+	.free-trip img {
+		height: 300px;
+	}
+}
+
+@media (max-width: 380px) {
+	.nav-menu a {
+		font-size: 18px;
+	}
+
+	.header-text-container {
+		h1 {
+		font-size: 3.2rem;
+		}
+
+		h2 {
+			font-size: 2.1rem;
+		}
+	}
+}
+
+@media (max-width: 376px) {
+	.home p {
+		text-align: left;
+	}
+
+	.home .read-more-btn {
+		width: 70%;
+	}
+}
+
+@media (max-width: 376px) {
+	.block-container .info-container {
+		height: 280px;
+		width: 90%;
+		.info-heading {
+			letter-spacing: 0;
+		}
+
+		.icon-container {
+			justify-content: left;
+		}
+	}
+
+	.free-trip .text-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 330px) {
+	.header-text-container {
+		h1 {
+			font-size: 2.8rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+	}
+
+	.visit-us {
+		margin-bottom: 150px;
+	}
+
+	.block-container .info-container {
+		height: 310px;
+	}
+
+	.info-container {
+		.icon-container h3 {
+			font-size: 32px;
+			}
+	}
+
+	.location .text-container h3 {
+		letter-spacing: 2.2px;
+	}
+
+	.free-trip img {
+		height: 260px;
+	}
+
+	footer p:nth-of-type(2) {
+		font-size: 11px;
+	}
+}
+

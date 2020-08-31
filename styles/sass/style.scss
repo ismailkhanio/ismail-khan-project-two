@@ -1,176 +1,35 @@
-// VARIABLES
-// font style variables 
-$lato-font: "Lato", sans-serif; // p, form placeholder, a (menu), h2 
-$playfair-font: 'Playfair Display SC', serif; // h1, a (logo),  
-
-// color palette variables
-$greenish-cyan: #50E3C2;
-$black: #2C2C2C;
-$ice-blue: #FAFFFE;
-$twilight-blue: #063974;
-$light-light-blue: #D2F9F1;
-$spruce: #0C5F4C;
-
 // IMPORTS
 @import 'setup';
-@import 'header';
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'mainhome';
+@import 'maincontact';
+@import 'mainblog';
+@import 'footer';
 
-// MIXINS
-// sections
-// @mixin section-height-color($height, $bgcolor, $padding) {
-//   height: $height;
-//   background: $bgcolor;
-//   padding: $padding;
-// }
-
-// font heading color
-@mixin font-heading-color($color-value) {
-  font-family: $lato-font;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 3.8px;
-  font-size: 35px;
-  color: $color-value;
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-// body text and form placeholder text
-@mixin body-form-text($weight) {
-  font-family: $lato-font;
-  font-weight: $weight;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-// MAIN
-
-// Visit Us
-.visit-us {
-  height: 85vh;
-  padding: 200px 0;
-  background-color: $ice-blue;
-
-  .section-heading {
-    @include font-heading-color($spruce);
-  }
-
-  p {
-    @include body-form-text(400);
-  }
-
-  .read-more-btn {
-    font-family: $playfair-font;
-    font-weight: 900;
-    font-size: 20px;
-    text-align: center;
-    line-height: 32px;
-    letter-spacing: 1px;
-
-    color: $ice-blue;
-    background-color: $twilight-blue;
-    padding: 10px;
-  }
-  
-  .flex-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  
-    .text-container {
-      width: 65%;
-    }
-
-    .img-container {
-      width: 25%;
-      margin-left: 50px;
-    }
-
-    img {
-      box-shadow: -25px 25px 0px 0px $greenish-cyan;
-    }
-  }
-}
-
-// gallery 
-.gallery {
-  height: 100%;
-  padding: 100px 0;
-  background-color: $light-light-blue;
-}
-
-.gallery-img-container {
+img {
   width: 100%;
-  display: flex;
-
-	justify-content: space-evenly;
-	align-items: center;
-
-  img {
-    max-height: 400px;
-    max-width: 400px;
-    height: calc(80vw / 3);
-    width: calc(85vw / 3);
-  }
 }
 
-// info-block 
-.info-block {
-	height: 100%;
-	padding: 100px 0;
-	background-color: $ice-blue;
-
-	// Reference to create a perfect circle background: https://markheath.net/post/font-awesome-circle-background
-	i {
-		// font-size: 20px;
-		color: $ice-blue;
-		background-color: $greenish-cyan;
-		height: 40px;
-		width: 40px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 40px;
-		vertical-align: middle;
-		padding: 10px;
-	}
-
-	.info-heading {
-		font-family: $lato-font;
-		font-weight: 700;
-		font-size: 30px;
-		line-height: 58px;
-		letter-spacing: 3.2px;
-	}
-
-	p {
-		@include body-form-text(400);
-	}
+a,
+ul li {
+  list-style-type: none;
 }
 
-.block-container {
-	width: 75%;
-	margin: 0 auto;
-	
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	
-}
-.info-container {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	height: 300px;
+a {
+  text-decoration: none;
 }
 
-// location
-.location {
-	height: 100%;
-	padding: 100px 0;
-	background-color: $light-light-blue;
+h1,
+h2,
+h3 {
+  margin: 0;
 }
-
-
-
-
 

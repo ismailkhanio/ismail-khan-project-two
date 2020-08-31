@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ismail Khan - Project 02</title>
+	<title>Ismail Khan-P2 [Home]</title>
 	
 	<!-- css styles -->
-  <link rel="stylesheet" href=".\styles\style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
   rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
   <!-- font awesome -->
 	<script src="https://kit.fontawesome.com/3b7e1f5bdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
-  <header>
+  <header class="header-home">
     <div class="wrapper">
       <!-- nav and log -->
       <menu>
-        <a href="index.html" class="logo">Beachstays</a>
+        <a href="#" class="logo">Beachstays</a>
         <nav class="nav-menu">
           <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="/blog.html">blog</a></li>
+            <li><a href="/contact.html">contact</a></li>
           </ul>
         </nav>
       </menu> 
@@ -41,13 +43,13 @@
     </div>
   </header>
 
-  <main>
+  <main class="home">
     <section class="visit-us">
       <div class="wrapper">
         <div class="flex-container">
           <div class="text-container">
-          <h3 class="section-heading">Visit Guyana</h3>
-            <p class="body-text">Lorem ipsum dolor set amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.
+            <h3>Visit Guyana</h3>
+            <p>Lorem ipsum dolor set amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.
               Vesitbulum consequat verstibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla
               pulvinar tortor. Lorem ipsum dolor set amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum
               eleifend. Vesitbulum consequat verstibulum felis pharetra luctus. Quisque interdum orci quis convallis</p>
@@ -72,52 +74,82 @@
     </section>
 
     <section class="info-block">
-      <!-- beach house block -->
-      <div class="block-container">
-				<!-- beach houses -->
-				<div class="info-container">
-					<i class="fas fa-home"></i>
-					<h3 class="info-heading">Beach houses</h3>
-					<p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-				</div>
-				
-				<!-- community -->
-				<div class="info-container">
-					<i class="fas fa-users"></i>
-					<h3 class="info-heading">Community</h3>
-					<p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-				</div>
-				<!-- blog -->
-				<div class="info-container">
-					<i class="fas fa-file"></i>
-					<h3 class="info-heading">Blog</h3>
-					<p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-				</div>
-				<!-- get in touch -->
-				<div class="info-container">
-					<i class="fas fa-phone"></i>
-					<h3 class="info-heading">Get in touch</h3>
-					<p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-				</div>
+      <div class="wrapper">
+        <!-- beach house block -->
+        <div class="block-container">
+          <!-- beach houses -->
+          <div class="info-container">
+            <!-- icon container -->
+            <div class="icon-container">
+              <i class="fas fa-home"></i>
+              <h3 class="info-heading">Beach houses</h3>
+            </div>
+            <p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+          </div>
+          
+          <!-- community -->
+          <div class="info-container">
+            <div class="icon-container">
+              <i class="fas fa-users"></i>
+              <h3 class="info-heading">Community</h3>
+            </div>
+            <p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+          </div>
+          <!-- blog -->
+          <div class="info-container">
+            <div class="icon-container">
+              <i class="fas fa-file"></i>
+              <h3 class="info-heading">Blog</h3>
+            </div>
+            <p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+          </div>
+          <!-- get in touch -->
+          <div class="info-container">
+            <div class="icon-container">
+              <i class="fas fa-phone"></i>
+              <h3 class="info-heading">Get in touch</h3>
+            </div>
+            <p class="info-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+          </div>
+        </div>
       </div>
-
-      <!-- use flex wrap and set the width on the container to it wraps two by two -->
     </section>
 
     <section class="location">
-      <img src="" alt="">
-      <h3 class="location-heading">Plan ahead</h3>
-			<p class="location-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. It et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vesitbulum lacus tristique eu. Sed urna ex,</p>
-			
-			<button class="read-more-btn">read more</button>
-
+      <div class="wrapper">
+          <div class="top-location-container">
+            <div class="img-container">
+              <img src="./beach-final-images/left-image.jpg" alt="Peachy hotel, looking up towards the sky, with branches in the shot.">
+            </div>
+            <div class="text-container">
+              <h3>Plan ahead</h3>
+              <p class="location-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. It et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vesitbulum lacus tristique eu. Sed urna ex,</p>
+              <a href="#" class="read-more-btn">read more</a>
+            </div>
+          </div>
+    
+          <div class="bot-location-container">
+            <div class="img-container">
+              <img src="./beach-final-images/right-image.jpg" alt="Peachy hotel, looking up towards the sky, with branches in the shot.">
+            </div>
+            <div class="text-container">
+              <h3>New Locations</h3>
+              <p class="location-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. It et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vesitbulum lacus tristique eu. Sed urna ex,</p>
+              <a href="#" class="read-more-btn">read more</a>
+            </div>
+          </div>
+      </div>
     </section>
 
     <section class="free-trip">
-
-			<h2 class="free-trip-heading">Free trip with Beachstays</h2>
-			<p class="free-trip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
-			<button class="read-more-btn">find out more</button>	
+			<img src="/beach-final-images/banner-image.jpg" alt="">
+			<div class="wrapper">
+				<div class="text-container">
+					<h3>Free trip with Beachstays</h3>
+					<p class="free-trip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
+					<a href="#" class="read-more-btn">find out more</a>
+				</div>
+			</div>
 		</section>
 	</main>
 	

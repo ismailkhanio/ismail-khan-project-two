@@ -1,0 +1,17 @@
+footer {
+  background-color: $black;
+  text-align: center;
+  @include body-form-text(400);
+  color: $ice-blue;
+  padding: 10px 0;
+
+  a,
+  p {
+    color: white;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

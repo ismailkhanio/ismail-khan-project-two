@@ -1,0 +1,18 @@
+// font heading color
+@mixin font-heading-color($color-value) {
+  font-family: $lato-font;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 3.8px;
+  font-size: 35px;
+  color: $color-value;
+}
+
+// body text and form placeholder text
+@mixin body-form-text($weight) {
+  font-family: $lato-font;
+  font-weight: $weight;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+}

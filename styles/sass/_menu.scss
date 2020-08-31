@@ -1,0 +1,84 @@
+.logo {
+	font-family: $playfair-font;
+	font-size: 34.6px;
+	color: $greenish-cyan;
+}
+
+menu {
+	width: 100%;
+	display: flex;
+	padding-left: 0;
+}
+
+.nav-menu {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+
+	ul {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	a {
+		color: $ice-blue;
+		font-family: $lato-font;
+		font-weight: 700;
+		font-size: 20px;
+
+		line-height: 29px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-align: center;
+
+		&:hover {
+			color: $greenish-cyan;
+		}
+	}
+}
+
+// MEDIA QUERIES
+@media (max-width: 940px) {
+	header .logo {
+		margin: 25px 0;
+	}
+	
+	menu {
+		flex-direction: column;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+	
+		.nav-menu {
+			justify-content: center;
+			padding-top: 15px;
+	
+			ul {
+				width: 100%;
+				padding-left: 0;
+				justify-content: space-evenly;
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	menu .nav-menu ul {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 330px) {
+	.nav-menu a {
+		font-size: 16px;
+	}
+
+	.nav-menu ul {
+		flex-direction: column;
+		align-items: center;
+	}
+}
